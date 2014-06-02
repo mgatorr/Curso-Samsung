@@ -5,8 +5,9 @@ import java.util.Map;
 
 public class FactoryPrinter {
 	private Map<String, Printer> impresoras = new HashMap<String, Printer>();
+	private FactoryPrinter impresora = new FactoryPrinter();
 
-	public FactoryPrinter() {
+	private FactoryPrinter() {
 		impresoras.put("A", new PrinterA());
 		impresoras.put("B", new PrinterB());
 		impresoras.put("C", new PrinterC());
@@ -15,4 +16,7 @@ public class FactoryPrinter {
 	public Printer getImpresora(String key){
 		return impresoras.get(key);
 	}
+	 public FactoryPrinter getPrinter(){
+		 return impresora;
+	 }
 }
