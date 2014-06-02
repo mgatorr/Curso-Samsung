@@ -11,4 +11,8 @@ public class FactoryPrinter {
 		impresoras.put("B", new PrinterB());
 		impresoras.put("C", new PrinterC());
 	}
+	
+	public Printer getImpresora(String key){
+		return impresoras.get(key);
+	}
 }
