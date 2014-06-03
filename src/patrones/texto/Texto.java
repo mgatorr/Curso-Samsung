@@ -25,11 +25,11 @@ public class Texto extends Compuesto {
 	}
 
 	@Override
-	public String dibujar(boolean mayus){
+	public String dibujar(boolean mayus) {
 		String print = "";
-		for(Componente caracteres:this.getCompuesto()){
-			print = ""+print+""+caracteres.dibujar(mayus); 
+		for (Componente caracteres : this.getCompuesto()) {
+			print = "" + print + "" + caracteres.dibujar(mayus);
 		}
-		return print+"---o---\n";
+		return print + "---o---\n";
 	}
 }

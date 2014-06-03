@@ -7,32 +7,31 @@ public class Parrafo extends Compuesto {
 
 	@Override
 	public void add(Componente componet) {
-		if(componet.isComposite()){
+		if (componet.isComposite()) {
 			throw new UnsupportedOperationException("Acción no permitida... ");
-		}else{
+		} else {
 			this.getCompuesto().add(componet);
 		}
-		
+
 	}
 
 	@Override
 	public void remove(Componente componet) {
-		if(componet.isComposite()){
+		if (componet.isComposite()) {
 			throw new UnsupportedOperationException("Acción no permitida... ");
-		}else{
+		} else {
 			this.getCompuesto().remove(componet);
 		}
-		
+
 	}
 
 	@Override
-	public String dibujar(boolean mayus){
+	public String dibujar(boolean mayus) {
 		String print = "";
-		for(Componente caracteres:this.getCompuesto()){
-			print = ""+print+""+caracteres.dibujar(mayus); 
+		for (Componente caracteres : this.getCompuesto()) {
+			print = "" + print + "" + caracteres.dibujar(mayus);
 		}
-		return print+"\n";
+		return print + "\n";
 	}
-
 
 }

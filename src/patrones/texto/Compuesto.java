@@ -25,9 +25,8 @@ public abstract class Compuesto extends Componente {
 
 		return true;
 	}
-	
+
 	@Override
 	public abstract String dibujar(boolean mayus);
-
 
 }
