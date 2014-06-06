@@ -29,6 +29,6 @@ public class Calculadora{
 
 	@Override
 	public String toString() {
-		return " Total = " + getTotal();
+		return " \nTotal = " + getTotal();
 	}
 }
