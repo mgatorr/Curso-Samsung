@@ -13,10 +13,7 @@ public class Cuadrado extends Figura {
 		return lado;
 	}
 
-	public void setLado(double lado) {
 
-		this.lado = this.positivo(lado);
-	}
 
 	@Override
 	public double area() {
